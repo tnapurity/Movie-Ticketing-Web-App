@@ -1,0 +1,13 @@
+C:\Users\tnapu\Desktop\CSharp\bin\Debug\netcoreapp3.1\CSharp.exe
+C:\Users\tnapu\Desktop\CSharp\bin\Debug\netcoreapp3.1\CSharp.deps.json
+C:\Users\tnapu\Desktop\CSharp\bin\Debug\netcoreapp3.1\CSharp.runtimeconfig.json
+C:\Users\tnapu\Desktop\CSharp\bin\Debug\netcoreapp3.1\CSharp.runtimeconfig.dev.json
+C:\Users\tnapu\Desktop\CSharp\bin\Debug\netcoreapp3.1\CSharp.dll
+C:\Users\tnapu\Desktop\CSharp\bin\Debug\netcoreapp3.1\CSharp.pdb
+C:\Users\tnapu\Desktop\CSharp\obj\Debug\netcoreapp3.1\CSharp.csprojAssemblyReference.cache
+C:\Users\tnapu\Desktop\CSharp\obj\Debug\netcoreapp3.1\CSharp.AssemblyInfoInputs.cache
+C:\Users\tnapu\Desktop\CSharp\obj\Debug\netcoreapp3.1\CSharp.AssemblyInfo.cs
+C:\Users\tnapu\Desktop\CSharp\obj\Debug\netcoreapp3.1\CSharp.csproj.CoreCompileInputs.cache
+C:\Users\tnapu\Desktop\CSharp\obj\Debug\netcoreapp3.1\CSharp.dll
+C:\Users\tnapu\Desktop\CSharp\obj\Debug\netcoreapp3.1\CSharp.pdb
+C:\Users\tnapu\Desktop\CSharp\obj\Debug\netcoreapp3.1\CSharp.genruntimeconfig.cache
