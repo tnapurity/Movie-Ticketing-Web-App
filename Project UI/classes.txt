@@ -1,0 +1,87 @@
+class Movie
+{
+  string title="movie_title";
+  integer capacity="150";
+
+  static void Main(string[] args)
+        {
+          Movie m01 = new Movie();
+          m01.title = "The Devil All the time";
+          m01.capacity = "150";
+
+          Movie m02 = new Movie();
+          m02.title = "Knives Out";
+          m02.capacity = "150";
+
+          Movie m03 = new Movie();
+          m03.title = "Midsommar";
+          m03.capacity = "150";
+
+          Movie m04 = new Movie();
+          m04.title = "Tenet";
+          m04.capacity = "150";
+
+          Movie m05 = new Movie();
+          m05.title = "Inception";
+          m05.capacity = "150";
+
+          Movie m06 = new Movie();
+          m06.title = "Joker";
+          m06.capacity = "150";
+
+          Movie m07 = new Movie();
+          m2.title = "Zodiac";
+          m2.capacity = "150";
+
+          Movie m08 = new Movie();
+          m08.title = "The Boyz";
+          m08.capacity = "150";
+
+          Movie m09 = new Movie();
+          m09.title = "Raised by wolves";
+          m09.capacity = "150";
+
+          Movie m10 = new Movie();
+          m10.title = "Cobra Kai";
+          m10.capacity = "150";
+
+          Movie m11 = new Movie();
+          m11.title = "The Godfather";
+          m11.capacity = "150";
+
+          Movie m12 = new Movie();
+          m12.title = "After the colided";
+          m12.capacity = "150";
+
+          Movie m13 = new Movie();
+          m13.title = "Midway";
+          m13.capacity = "150";
+
+          Movie m14 = new Movie();
+          m14.title = "21 Bridges";
+          m14.capacity = "150";
+      
+          Movie m15 = new Movie();
+          m15.title = "Interstellar";
+          m15.capacity = "150";
+
+          Movie m16 = new Movie();
+          m16.title = "The Dark Knight";
+          m16.capacity = "150";
+
+        }
+}
+
+
+class TimeTable:Movie
+{
+string DateTime="2020-10-06-1800";
+}
+
+
+class Users
+
+{
+string UserName="Unknown_user";
+}
+
