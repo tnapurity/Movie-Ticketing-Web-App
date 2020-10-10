@@ -14392,8 +14392,48 @@
   "RootNamespace": "AspNetCoreTodo",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\tnapu\\Desktop\\CSharp\\AspNetCoreTodo\\Views\\Movies\\Edit.cshtml",
+      "TargetPath": "Views\\Movies\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\tnapu\\Desktop\\CSharp\\AspNetCoreTodo\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\tnapu\\Desktop\\CSharp\\AspNetCoreTodo\\Views\\Users\\Delete.cshtml",
+      "TargetPath": "Views\\Users\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\tnapu\\Desktop\\CSharp\\AspNetCoreTodo\\Views\\Users\\Create.cshtml",
+      "TargetPath": "Views\\Users\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\tnapu\\Desktop\\CSharp\\AspNetCoreTodo\\Views\\Users\\Details.cshtml",
+      "TargetPath": "Views\\Users\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\tnapu\\Desktop\\CSharp\\AspNetCoreTodo\\Views\\Movies\\Delete.cshtml",
+      "TargetPath": "Views\\Movies\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\tnapu\\Desktop\\CSharp\\AspNetCoreTodo\\Views\\Movies\\Details.cshtml",
+      "TargetPath": "Views\\Movies\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\tnapu\\Desktop\\CSharp\\AspNetCoreTodo\\Views\\Movies\\Index.cshtml",
+      "TargetPath": "Views\\Movies\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\tnapu\\Desktop\\CSharp\\AspNetCoreTodo\\Views\\Users\\Edit.cshtml",
+      "TargetPath": "Views\\Users\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14412,8 +14452,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\tnapu\\Desktop\\CSharp\\AspNetCoreTodo\\Views\\Users\\Index.cshtml",
+      "TargetPath": "Views\\Users\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\tnapu\\Desktop\\CSharp\\AspNetCoreTodo\\Views\\Movies\\Book.cshtml",
+      "TargetPath": "Views\\Movies\\Book.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\tnapu\\Desktop\\CSharp\\AspNetCoreTodo\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\tnapu\\Desktop\\CSharp\\AspNetCoreTodo\\Views\\Movies\\Create.cshtml",
+      "TargetPath": "Views\\Movies\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
