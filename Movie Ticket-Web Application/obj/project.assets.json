@@ -9193,11 +9193,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tnapu\\Desktop\\CSharp\\AspNetCoreTodo\\AspNetCoreTodo.csproj",
+      "projectUniqueName": "C:\\Users\\tnapu\\Desktop\\CSharp\\Movie Ticket-Web Application\\AspNetCoreTodo.csproj",
       "projectName": "AspNetCoreTodo",
-      "projectPath": "C:\\Users\\tnapu\\Desktop\\CSharp\\AspNetCoreTodo\\AspNetCoreTodo.csproj",
+      "projectPath": "C:\\Users\\tnapu\\Desktop\\CSharp\\Movie Ticket-Web Application\\AspNetCoreTodo.csproj",
       "packagesPath": "C:\\Users\\tnapu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tnapu\\Desktop\\CSharp\\AspNetCoreTodo\\obj\\",
+      "outputPath": "C:\\Users\\tnapu\\Desktop\\CSharp\\Movie Ticket-Web Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tnapu\\AppData\\Roaming\\NuGet\\NuGet.Config",
