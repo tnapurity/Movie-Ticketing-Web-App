@@ -4,28 +4,33 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
 
+
+<div class="container">
+<div class="row">
+	<div class="col-sm-12">
+<h3>Available Movies list table</h3>
 <p>
-    <a asp-action="Create">Create New</a>
+    <button type="button" class="btn btn-success float-right --white"><a asp-action="Create">Create New</a></button>
 </p>
-<table class="table">
-    <thead>
+<table class="table table-striped table-hover"">
+    <thead class="thead-dark">
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Title)
+             <th>
+               Cover
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.TotalCapacity)
+                Movie Title
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.BookedCapacity)
+                Total Capacity
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.imgUrl)
+                Number of bookings
             </th>
+           
             <th>
-                @Html.DisplayNameFor(model => model.PlotDsc)
+                Description
             </th>
             <th></th>
         </tr>
@@ -33,6 +38,9 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
+            <td>
+               <img src="@item.imgUrl" />
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Title)
             </td>
@@ -42,9 +50,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.BookedCapacity)
             </td>
-            <td>
-               <img src="@item.imgUrl" />
-            </td>
+            
             <td>
                 @Html.DisplayFor(modelItem => item.PlotDsc)
             </td>
@@ -57,3 +63,7 @@
 }
     </tbody>
 </table>
+
+	</div>
+</div>
+</div>
