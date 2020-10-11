@@ -11,7 +11,7 @@
 	<div class="col-sm-12">
 <h3>Available Movies list table</h3>
 <p>
-    <button type="button" class="btn btn-success float-right --white"><a asp-action="Create">Create New</a></button>
+    <button type="button" class="btn btn-success float-right --white"><a style="color:white"asp-action="Create">Create New</a></button>
 </p>
 <table class="table table-striped table-hover"">
     <thead class="thead-dark">
@@ -39,7 +39,7 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-               <img src="@item.imgUrl" />
+               <img style="width:25%"src="@item.imgUrl" />
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Title)
