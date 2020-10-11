@@ -1,0 +1,64 @@
+﻿@model List<Movie>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            <div id="slides" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators bg-primary fixed-bottom">
+                    @for (var i = 0; i < Model.Count; i = i + 4)
+                    {
+                        <li class="@(i == 0?"active":"")" data-target="#slides" data-slide-to="@(i/4)"></li>
+                    }
+                </ul>
+
+                <div class="carousel-inner">
+
+                    @for (var i = 0; i < Model.Count; i = i + 4)
+                    {
+                        <div class="carousel-item @(i == 0?"active":"")">
+                            <div class="row">
+                                <div class="card col-3">
+                                    <img class="card-img-top" src="@Model[i].imgUrl" alt="@Model[i].Title">
+                                    <div class="card-body">
+                                        <h5 class="card-title">@Model[i].Title</h5>
+                                        <p class="card-text">@Model[i].PlotDsc</p>
+                                        <a href="/Movies/Details/@Model[i].Id" class="btn btn-primary">book now</a>
+                                    </div>
+                                </div>
+
+                                <div class="card col-3">
+                                    <img class="card-img-top" src="@Model[i+1].imgUrl" alt="@Model[i+1].Title">
+                                    <div class="card-body">
+                                        <h5 class="card-title">@Model[i + 1].Title</h5>
+                                        <p class="card-text">@Model[i + 1].PlotDsc</p>
+                                        <a href="/Movies/Details/@Model[i+1].Id" class="btn btn-primary">book now</a>
+                                    </div>
+                                </div>
+
+                                <div class="card col-3">
+                                    <img class="card-img-top" src="@Model[i+2].imgUrl" alt="@Model[i+2].Title">
+                                    <div class="card-body">
+                                        <h5 class="card-title">@Model[i + 2].Title</h5>
+                                        <p class="card-text">@Model[i + 2].PlotDsc</p>
+                                        <a href="/Movies/Details/@Model[i+2].Id" class="btn btn-primary">book now</a>
+                                    </div>
+                                </div>
+                                <div class="card col-3">
+                                    <img class="card-img-top" src="@Model[i+3].imgUrl" alt="@Model[i+3].Title">
+                                    <div class="card-body">
+                                        <h5 class="card-title">@Model[i + 3].Title</h5>
+                                        <p class="card-text">@Model[i + 3].PlotDsc</p>
+                                        <a href="/Movies/Details/@Model[i+3].Id" class="btn btn-primary">book now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
