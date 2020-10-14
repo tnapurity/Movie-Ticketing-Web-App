@@ -15,9 +15,12 @@ namespace AspNetCoreTodo.Models
         public string Title  { get; set; }
         public int TotalCapacity  { get; set; }
         /// <summary>
-        /// Number of Booked 
+        /// Number of All capacities 
         /// </summary>
         public int BookedCapacity { get; set; }
+        /// <summary>
+        /// Number of booked items
+        /// </summary>
         public string imgUrl { get; set; }
         public string PlotDsc { get; set; }
 
