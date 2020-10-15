@@ -177,8 +177,11 @@ namespace AspNetCoreTodo.Controllers
             {
                 return NotFound();
             }
-
-            return View(movie);
+            var model = new DetailViewModel
+            {
+                Movie = movie
+            };
+            return View(model);
         }
 
         public async Task<IActionResult> Book(int id)
@@ -195,8 +198,12 @@ namespace AspNetCoreTodo.Controllers
             {
                 Message = "No vacancy";
             }
-
-            return View((object)Message);
+            var model = new DetailViewModel
+            {
+                Message = Message,
+                Movie = movie
+            };
+            return View("Details",model);
         }
 
 

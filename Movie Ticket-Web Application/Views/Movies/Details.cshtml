@@ -1,34 +1,44 @@
-﻿@model AspNetCoreTodo.Models.Movie
+﻿@model AspNetCoreTodo.Models.DetailViewModel
 
 @{
     ViewData["Title"] = "Details";
-    var remain = Model.TotalCapacity - @Model.BookedCapacity;
+    var remain = Model.Movie.TotalCapacity - @Model.Movie.BookedCapacity;
 }
 
 
-<div class="container">
-    <div class="row">
-        <div class="col-sm-4 mt-5">
-            <div class="col-sm-2">
-                <div class="" style="width: 25rem;">
-                    <img class="w-50" src="@Html.DisplayFor(model => model.imgUrl)" alt="@Html.DisplayFor(model => model.Title)">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 mt-5">
+                <div class="col-sm-2">
+                    <div class="" style="width: 25rem;">
+                        <img class="w-50" src="@Html.DisplayFor(model => model.Movie.imgUrl)" alt="@Html.DisplayFor(model => model.Movie.Title)">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-8 mt-5">
-            <div class="">
-                <h5 class="card-title">@Html.DisplayFor(model => model.Title)</h5>
-                <p class="card-text">@Html.DisplayFor(model => model.PlotDsc)</p>
-                <p class="alert alert-warning" role="alert">Available capacity: <span class="font-weight-bold">@remain</span></p>
-                <a href="/Movies/Book/@Model.Id" class="btn btn-primary float-right">book now</a>
+            <div class="col-sm-8 mt-5">
+                <div class="">
+                    <h5 class="card-title">@Html.DisplayFor(model => model.Movie.Title)</h5>
+                    <p class="card-text">@Html.DisplayFor(model => model.Movie.PlotDsc)</p>
+                    <p class="alert alert-warning" role="alert">Available capacity: <span class="font-weight-bold">@remain</span></p>
+                    <a href="/Movies/Book/@Model.Movie.Id" class="btn btn-primary float-right">book now</a>
+                </div>
+
+                <div>
+                    <a class="btn btn-outline-secondary" asp-action="Edit" asp-route-id="@Model.Movie.Id">Edit</a> |
+                    <a class="btn btn-outline-secondary" asp-action="Index">Back to List</a>
+                </div>
+
             </div>
 
-<div>
-    <a class="btn btn-outline-secondary" asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a class="btn btn-outline-secondary" asp-action="Index">Back to List</a>
-</div>
-
         </div>
+        @if (!string.IsNullOrEmpty(Model.Message))
+        {
+            <div class="row">
+                <div class="col-sm-12 mt-5">
+                    <div class="alert alert-primary" role="alert">@Model.Message.ToString()</div>
+                </div>
+            </div>
+        }
+
     </div>
-</div>
 
