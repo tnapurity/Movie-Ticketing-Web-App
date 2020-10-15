@@ -14485,11 +14485,6 @@
       "FilePath": "c:\\Users\\tnapu\\Desktop\\CSharp\\Movie Ticket-Web Application\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\tnapu\\Desktop\\CSharp\\Movie Ticket-Web Application\\Views\\Movies\\Book.cshtml",
-      "TargetPath": "Views\\Movies\\Book.cshtml",
-      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"
