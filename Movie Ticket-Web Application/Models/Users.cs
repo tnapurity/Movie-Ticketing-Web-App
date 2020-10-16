@@ -22,7 +22,7 @@ namespace AspNetCoreTodo.Models
 
         public string AvatarimgUrl { get; set; }
 
-        //public virtual ICollection<Movie> Movies { get; set; }
+      
 
     }
 }
