@@ -370,7 +370,6 @@ C:\Users\tnapu\Desktop\CSharp\Movie Ticket-Web Application\obj\Debug\netcoreapp3
 C:\Users\tnapu\Desktop\CSharp\Movie Ticket-Web Application\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 C:\Users\tnapu\Desktop\CSharp\Movie Ticket-Web Application\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\tnapu\Desktop\CSharp\Movie Ticket-Web Application\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
-C:\Users\tnapu\Desktop\CSharp\Movie Ticket-Web Application\obj\Debug\netcoreapp3.1\Razor\Views\Movies\Book.cshtml.g.cs
 C:\Users\tnapu\Desktop\CSharp\Movie Ticket-Web Application\obj\Debug\netcoreapp3.1\Razor\Views\Movies\Create.cshtml.g.cs
 C:\Users\tnapu\Desktop\CSharp\Movie Ticket-Web Application\obj\Debug\netcoreapp3.1\Razor\Views\Movies\Delete.cshtml.g.cs
 C:\Users\tnapu\Desktop\CSharp\Movie Ticket-Web Application\obj\Debug\netcoreapp3.1\Razor\Views\Movies\Details.cshtml.g.cs
