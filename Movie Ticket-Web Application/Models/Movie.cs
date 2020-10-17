@@ -24,6 +24,5 @@ namespace AspNetCoreTodo.Models
         public string imgUrl { get; set; }
         public string PlotDsc { get; set; }
 
-        //public virtual ICollection<Users> Users { get; set; }
     }
 }
