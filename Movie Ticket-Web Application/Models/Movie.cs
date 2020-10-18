@@ -23,6 +23,7 @@ namespace AspNetCoreTodo.Models
         /// </summary>
         public string imgUrl { get; set; }
         public string PlotDsc { get; set; }
+        public string FullPlotDsc { get; set; }
 
     }
 }

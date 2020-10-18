@@ -17,8 +17,9 @@
             </div>
             <div class="col-sm-8 mt-5">
                 <div class="">
-                    <h5 class="card-title">@Html.DisplayFor(model => model.Movie.Title)</h5>
+                    <h3 class="card-title">@Html.DisplayFor(model => model.Movie.Title)</h3>
                     <p class="card-text">@Html.DisplayFor(model => model.Movie.PlotDsc)</p>
+                    <p class="card-text"><h5>Description:</h5>@Html.DisplayFor(model => model.Movie.FullPlotDsc)</p>
                     <p class="alert alert-warning" role="alert">Available capacity: <span class="font-weight-bold">@remain</span></p>
                     <a href="/Movies/Book/@Model.Movie.Id" class="btn btn-primary float-right">book now</a>
                 </div>

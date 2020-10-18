@@ -31,7 +31,8 @@ namespace AspNetCoreTodo.Controllers
                     TotalCapacity = 150,
                     Title = "The Devil All the time",
                     imgUrl = "/images/01.jpg",
-                    PlotDsc = "breif plot descriptions"
+                    PlotDsc = "A young man is devoted to protecting his loved...",
+                    FullPlotDsc = "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
 
                 });
                 movieList.Add(new Movie
@@ -40,7 +41,8 @@ namespace AspNetCoreTodo.Controllers
                     TotalCapacity = 150,
                     Title = "Knives Out",
                     imgUrl = "/images/02.jpg",
-                    PlotDsc = "breif plot descriptions"
+                    PlotDsc = "The circumstances surrounding the death...",
+                    FullPlotDsc = "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
                 });
                 movieList.Add(new Movie
                 {
@@ -48,7 +50,8 @@ namespace AspNetCoreTodo.Controllers
                     TotalCapacity = 150,
                     Title = "Midsommar",
                     imgUrl = "/images/03.jpg",
-                    PlotDsc = "breif plot descriptions"
+                    PlotDsc = "A couple travel to Sweden to visit their friend's rural...",
+                    FullPlotDsc = "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
                 });
                 movieList.Add(new Movie
                 {
@@ -56,89 +59,100 @@ namespace AspNetCoreTodo.Controllers
                     TotalCapacity = 150,
                     Title = "Tenet",
                     imgUrl = "/images/04.jpg",
-                    PlotDsc = "breif plot descriptions"
-                });
-                movieList.Add(new Movie
-                {
-                   
-                    TotalCapacity = 150,
-                    Title = "Tenet",
-                    imgUrl = "/images/05.jpg",
-                    PlotDsc = "breif plot descriptions"
-
+                    PlotDsc = "A secret agent embarks on a dangerous, time-bending...",
+                    FullPlotDsc = "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
                 });
                 movieList.Add(new Movie
                 {
                    
                     TotalCapacity = 150,
                     Title = "Inception",
+                    imgUrl = "/images/05.jpg",
+                    PlotDsc = "Cobb steals information from his targets by entering...",
+                    FullPlotDsc = "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
+
+                });
+                movieList.Add(new Movie
+                {
+                   
+                    TotalCapacity = 150,
+                    Title = "Joker",
                     imgUrl = "/images/06.jpg",
-                    PlotDsc = "breif plot descriptions"
+                    PlotDsc = "Arthur Fleck, a party clown, leads an impoverished life ...",
+                    FullPlotDsc = "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
                 });
                 movieList.Add(new Movie
                 {
                     
                     TotalCapacity = 150,
-                    Title = "Joker",
+                    Title = "Zodiac",
                     imgUrl = "/images/07.jpg",
-                    PlotDsc = "breif plot descriptions"
+                    PlotDsc = "Robert Graysmith, a cartoonist by profession...",
+                    FullPlotDsc = "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
                 });
                 movieList.Add(new Movie
                 {
                   
                     TotalCapacity = 150,
-                    Title = "Zodiac",
+                    Title = "The Boyz",
                     imgUrl = "/images/08.jpg",
-                    PlotDsc = "breif plot descriptions"
+                    PlotDsc = "Superheroes are often as popular as celebrities...",
+                    FullPlotDsc = "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
                 });
 
                 movieList.Add(new Movie
                 {
                     
                     TotalCapacity = 150,
-                    Title = "The Boyz",
+                    Title = "Raised by wolves",
                     imgUrl = "/images/09.jpg",
-                    PlotDsc = "breif plot descriptions"
+                    PlotDsc = "Two androids are tasked with raising human children...",
+                    FullPlotDsc = "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
                 });
                 movieList.Add(new Movie
                 {
                    
                     TotalCapacity = 150,
-                    Title = "Raised by wolves",
-                    imgUrl = "/images/10.jpg",
-                    PlotDsc = "breif plot descriptions"
-                });
-                movieList.Add(new Movie
-                {
-                    
-                    TotalCapacity = 150,
                     Title = "Cobra Kai",
-                    imgUrl = "/images/11.jpg",
-                    PlotDsc = "breif plot descriptions"
+                    imgUrl = "/images/10.jpg",
+                    PlotDsc = "Thirty four years after events of the 1984 All Valley...",
+                    FullPlotDsc = "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
                 });
                 movieList.Add(new Movie
                 {
                     
                     TotalCapacity = 150,
                     Title = "The Godfather",
-                    imgUrl = "/images/12.jpg",
-                    PlotDsc = "breif plot descriptions"
+                    imgUrl = "/images/11.jpg",
+                    PlotDsc = "The Godfather is a 1972 American crime film ...",
+                    FullPlotDsc = "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
                 });
                 movieList.Add(new Movie
                 {
                     
                     TotalCapacity = 150,
-                    Title = "After the colided",
-                    imgUrl = "/images/13.jpg",
-                    PlotDsc = "breif plot descriptions"
+                    Title = "Her",
+                    imgUrl = "/images/12.jpg",
+                    PlotDsc = "Theodore Twombly, an introverted writer, buys an ...",
+                    FullPlotDsc = "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
                 });
                 movieList.Add(new Movie
                 {
                     
                     TotalCapacity = 150,
                     Title = "Midway",
+                    imgUrl = "/images/13.jpg",
+                    PlotDsc = "Centers on the Battle of Midway, a clash between...",
+                    FullPlotDsc = "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
+                });
+                movieList.Add(new Movie
+                {
+                    
+                    TotalCapacity = 150,
+                    Title = "21 Bridges",
                     imgUrl = "/images/14.jpg",
-                    PlotDsc = "breif plot descriptions"
+                    PlotDsc = "After uncovering a massive conspiracy, an embattled... ",
+                    FullPlotDsc = "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
                 });
                 movieList.Add(new Movie
                 {
@@ -146,7 +160,8 @@ namespace AspNetCoreTodo.Controllers
                     TotalCapacity = 150,
                     Title = "Interstellar",
                     imgUrl = "/images/15.jpg",
-                    PlotDsc = "breif plot descriptions"
+                    PlotDsc = "In the future, where Earth is becoming uninhabitable...",
+                    FullPlotDsc = "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
                 });
                 movieList.Add(new Movie
                 {
@@ -154,7 +169,8 @@ namespace AspNetCoreTodo.Controllers
                     TotalCapacity = 150,
                     Title = "The Dark Knight",
                     imgUrl = "/images/16.jpg",
-                    PlotDsc = "breif plot descriptions"
+                    PlotDsc = "After Gordon, Dent and Batman begin an assault on...",
+                    FullPlotDsc = "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."
                 });
                 await _context.Movie.AddRangeAsync(movieList);
                 await _context.SaveChangesAsync();
