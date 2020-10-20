@@ -33,14 +33,36 @@ namespace AspNetCoreTodo.Controllers
                 return NotFound();
             }
 
-            var users = await _context.Users
-                .FirstOrDefaultAsync(m => m.UserId == id);
+            var users = await _context.Users.FirstOrDefaultAsync(m => m.UserId == id);
+
             if (users == null)
             {
                 return NotFound();
             }
+            List <Reservation> reservations= _context.Reservation.Where(u => u.Uid == id).ToList();
 
-            return View(users);
+
+            List<ReservedDetail> reservedDetail = new List<ReservedDetail>();
+
+            foreach (var item in reservations)
+            {
+                Movie movie = _context.Movie.Where(x => x.Id == item.Mid).First();
+                reservedDetail.Add(new ReservedDetail
+                {
+                    MovieID = movie.Id,
+                    MovieImg = movie.imgUrl,
+                    MovieTitle = movie.Title,
+                    ResrvID = item.Id,
+                    Tickets = item.Tnumbers
+                });
+            }
+
+            ReservedlistViewModel model = new ReservedlistViewModel
+            {
+                ReservedList = reservedDetail,
+                User = users
+            };
+            return View(model);
         }
 
         // GET: Users/Create

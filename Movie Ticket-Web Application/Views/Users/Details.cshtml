@@ -1,4 +1,4 @@
-﻿@model AspNetCoreTodo.Models.Users
+﻿@model AspNetCoreTodo.Models.ReservedlistViewModel
 
 @{
     ViewData["Title"] = "Details";
@@ -10,56 +10,43 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
-<h1>Details</h1>
+            <div>
+                <h4>Users</h4>
+                <hr />
+                <img style="width:10%" src="@Html.DisplayFor(model => model.User.AvatarimgUrl)"/>
+                <dl class="row">
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.User.UserName)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.User.UserName)
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.User.Name)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.User.Name)
+                    </dd>
+                    <dt class="col-sm-2">
+                        @Html.DisplayNameFor(model => model.User.LastName)
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.User.LastName)
+                    </dd>
 
-<div>
-    <h4>Users</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.UserName)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.UserName)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.LastName)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.LastName)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.AvatarimgUrl)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.AvatarimgUrl)
-        </dd>
-    </dl>
-</div>
+                </dl>
+            </div>
 
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.UserId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
-
-
+            <div>
+                <a asp-action="Edit" asp-route-id="@Model.User.UserId">Edit</a> |
+                <a asp-action="Index">Back to List</a>
+            </div>
 
 
 
             <div class="">
                 <p class="alert alert-primary h4" role="alert" ">Booked movies list</p>
             </div>
-        </div>
-    </div>
-
-    <div class=" row">
-        <div class="col-lg-12">
 
             <table class="table">
                 <thead class="thead-dark">
@@ -71,26 +58,28 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Inceptions</td>
-                        <td>08</td>
-                        <td><button type="button" class="btn btn-danger">Delete</button></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Raised by wolves</td>
-                        <td>01</td>
-                        <td><button type="button" class="btn btn-danger">Delete</button></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>21 Bridges</td>
-                        <td>05</td>
-                        <td><button type="button" class="btn btn-danger">Delete</button></td>
-                    </tr>
+                    @foreach (var item in Model.ReservedList)
+                    {
+                        <tr>
+                            <th scope="row">@Html.DisplayFor(modelItem => item.ResrvID)</th>
+                            <td>@Html.DisplayFor(modelItem => item.MovieTitle)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Tickets)</td>
+                            <td><a href="/Reservations/Delete/@item.ResrvID" class="btn btn-danger">Delete</a></td>
+                        </tr>
+                    }
                 </tbody>
+
             </table>
+        </div>
+    </div>
+
+
+
+
+    <div class=" row">
+        <div class="col-lg-12">
+
+            
         </div>
     </div>
 

@@ -25,5 +25,7 @@ namespace AspNetCoreTodo.Data
 
             base.OnModelCreating(builder);
         }
+
+        public DbSet<AspNetCoreTodo.Models.Reservation> Reservation { get; set; }
     }
 }

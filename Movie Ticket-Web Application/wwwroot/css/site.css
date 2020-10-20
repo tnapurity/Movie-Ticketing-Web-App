@@ -21,18 +21,21 @@ for details on configuring this project to bundle and minify static web assets. 
 }
 
 .ceffect {
-width: 23%;
 box-shadow: 0px 0px 0px gray;
 -webkit-transition: box-shadow .6s ease-out;
 box-shadow: .8px .9px 3px #cccbcb;
-margin-right: 20px;
-margin-bottom: 7px;
 }
 
 .ceffect:hover{ 
      box-shadow: 1px 8px 20px grey;
     -webkit-transition:  box-shadow .6s ease-in;
   }
+
+
+  .logoimg{
+    width: 235px !important;
+  }
+
 
 a.navbar-brand {
   white-space: normal;

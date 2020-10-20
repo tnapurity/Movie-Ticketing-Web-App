@@ -395,3 +395,8 @@ C:\Users\tnapu\Desktop\CSharp\Movie Ticket-Web Application\obj\Debug\netcoreapp3
 C:\Users\tnapu\Desktop\CSharp\Movie Ticket-Web Application\obj\Debug\netcoreapp3.1\AspNetCoreTodo.dll
 C:\Users\tnapu\Desktop\CSharp\Movie Ticket-Web Application\obj\Debug\netcoreapp3.1\AspNetCoreTodo.pdb
 C:\Users\tnapu\Desktop\CSharp\Movie Ticket-Web Application\obj\Debug\netcoreapp3.1\AspNetCoreTodo.genruntimeconfig.cache
+C:\Users\tnapu\Desktop\CSharp\Movie Ticket-Web Application\obj\Debug\netcoreapp3.1\Razor\Views\Reservations\Create.cshtml.g.cs
+C:\Users\tnapu\Desktop\CSharp\Movie Ticket-Web Application\obj\Debug\netcoreapp3.1\Razor\Views\Reservations\Delete.cshtml.g.cs
+C:\Users\tnapu\Desktop\CSharp\Movie Ticket-Web Application\obj\Debug\netcoreapp3.1\Razor\Views\Reservations\Details.cshtml.g.cs
+C:\Users\tnapu\Desktop\CSharp\Movie Ticket-Web Application\obj\Debug\netcoreapp3.1\Razor\Views\Reservations\Edit.cshtml.g.cs
+C:\Users\tnapu\Desktop\CSharp\Movie Ticket-Web Application\obj\Debug\netcoreapp3.1\Razor\Views\Reservations\Index.cshtml.g.cs

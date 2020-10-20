@@ -10,9 +10,7 @@ namespace AspNetCoreTodo.Models
 
     {
         public Users()
-        {
-            //this.Movies = new HashSet<Movie>();
-        }
+        { }
         [Key]
         public Guid UserId{ get; set; }
         public string UserName {get;set;}

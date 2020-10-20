@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using AspNetCoreTodo.Data;
 using AspNetCoreTodo.Models;
 
+
 namespace AspNetCoreTodo.Controllers
 {
     public class MoviesController : Controller
@@ -201,15 +202,24 @@ namespace AspNetCoreTodo.Controllers
         }
 
         public async Task<IActionResult> Book(int id)
-        {
+            
+        {  
             string Message = "";
+            Reservation StoringMovie = new Reservation();
+            Users StoringUser = new Users();
+
+        
             Movie movie = await _context.Movie.Where(movie => movie.Id == id).FirstAsync();
             if (movie.BookedCapacity < movie.TotalCapacity)
             {
+                StoringUser.UserId = _context.Users.Where(m => m.UserName == "Admin").First().UserId;
                 movie.BookedCapacity = movie.BookedCapacity + 1;
-                _context.SaveChanges();
+                StoringMovie.Mid = movie.Id;
+                StoringMovie.Uid = StoringUser.UserId;
                 Message = "Movie booked successfully";
-            }
+                await _context.Reservation.AddAsync(StoringMovie);
+                         _context.SaveChanges();
+   }
             else
             {
                 Message = "No vacancy";
