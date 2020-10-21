@@ -4,16 +4,13 @@
     ViewData["Title"] = "Details";
 }
 
-
-
-
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
             <div>
                 <h4>Users</h4>
                 <hr />
-                <img style="width:10%" src="@Html.DisplayFor(model => model.User.AvatarimgUrl)"/>
+                <img style="width:10%" src="@Html.DisplayFor(model => model.User.AvatarimgUrl)" />
                 <dl class="row">
                     <dt class="col-sm-2">
                         @Html.DisplayNameFor(model => model.User.UserName)
@@ -35,56 +32,57 @@
                     </dd>
 
                 </dl>
+
+                <div style="float:right">
+                    <a class="btn btn-primary" asp-action="Edit" asp-route-id="@Model.User.UserId">Edit</a> |
+                    <a class="btn btn-info" asp-action="Index">Back to List</a>
+                </div>
             </div>
-
-            <div>
-                <a asp-action="Edit" asp-route-id="@Model.User.UserId">Edit</a> |
-                <a asp-action="Index">Back to List</a>
-            </div>
-
-
-
+            
+<br>
+            <hr />
+            <br>
             <div class="">
                 <p class="alert alert-primary h4" role="alert" ">Booked movies list</p>
-            </div>
+                </div>
 
-            <table class="table">
+                <table class=" table">
                 <thead class="thead-dark">
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Movie title</th>
-                        <th scope="col">NO</th>
-                        <th scope="col">Action</th>
-                    </tr>
+                <tr>
+                <th scope="col">#</th>
+                <th scope="col">Movie title</th>
+                <th scope="col">NO</th>
+                <th scope="col">Action</th>
+                </tr>
                 </thead>
                 <tbody>
-                    @foreach (var item in Model.ReservedList)
-                    {
-                        <tr>
-                            <th scope="row">@Html.DisplayFor(modelItem => item.ResrvID)</th>
-                            <td>@Html.DisplayFor(modelItem => item.MovieTitle)</td>
-                            <td>@Html.DisplayFor(modelItem => item.Tickets)</td>
-                            <td><a href="/Reservations/Delete/@item.ResrvID" class="btn btn-danger">Delete</a></td>
-                        </tr>
-                    }
+                @foreach (var item in Model.ReservedList)
+                {
+                    <tr>
+                    <th scope="row">@Html.DisplayFor(modelItem => item.ResrvID)</th>
+                    <td>@Html.DisplayFor(modelItem => item.MovieTitle)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Tickets)</td>
+                    <td><a href="/Reservations/Delete/@item.ResrvID" class="btn btn-danger">Delete</a></td>
+                </tr>
+                }
                 </tbody>
 
-            </table>
-        </div>
-    </div>
+                </table>
+                </div>
+                </div>
 
 
 
 
-    <div class=" row">
-        <div class="col-lg-12">
-
-            
-        </div>
-    </div>
+                <div class=" row">
+                <div class="col-lg-12">
 
 
+                </div>
+                </div>
 
 
-</div>
-        </div>
+
+
+                </div>
+                </div>

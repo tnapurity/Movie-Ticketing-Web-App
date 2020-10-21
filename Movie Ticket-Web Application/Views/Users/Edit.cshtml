@@ -4,12 +4,16 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
 
-<h4>Users</h4>
+<div class="container">
+
+<h4 class="mt-4">Edit user</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-12">
+<hr />
+<div class="row">
+    <div class="col-md-12">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="UserId" />
@@ -33,16 +37,14 @@
                 <input asp-for="AvatarimgUrl" class="form-control" />
                 <span asp-validation-for="AvatarimgUrl" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group mt-5">
                 <input type="submit" value="Save" class="btn btn-primary" />
+                <span> | </span><a class="btn btn-outline-secondary" asp-action="Index">Back to List</a>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
